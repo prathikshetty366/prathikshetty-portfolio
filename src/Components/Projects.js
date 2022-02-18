@@ -8,6 +8,7 @@ function Projects() {
 	});
 	return (
 		<div className="Container">
+			<h1 className="project-header"> Projects . .</h1>
 			{projectDetails.map((item) => {
 				return (
 					<a href={item.link} style={{ textDecoration: "none" }}>

@@ -146,7 +146,11 @@ function Home() {
 			{/* <!-- Hire Section  --> */}
 			<section id="hire" class="hire container">
 				<h1 class="hire-heading">Hire me to build your dream website</h1>
-				<a href="#footer" type="button" class="hire-button">
+				<a
+					href="mailto:prathikshetty366@gmail.com"
+					type="button"
+					class="hire-button"
+				>
 					Let's Go !!
 				</a>
 			</section>
