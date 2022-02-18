@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import banner from "../Assets/banner.jpg";
-import profile from "../Assets/IMG_20210105_155211-01.jpeg";
+import profile from "../Assets/profile.jpeg";
 import Projects from "../Components/Projects";
 
 function Home() {
@@ -126,7 +126,7 @@ function Home() {
 							<div class="service-back">
 								<h1 class="service-back-heading">Mobile Application</h1>
 								<p class="service-back-desc">
-									Front-end web development, also known as client-side
+									Mobile Application development, also known as client-side
 									development is the practice of producing HTML, CSS and
 									JavaScript for a website or Web Application so that a user can
 									see and interact with them directly
