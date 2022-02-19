@@ -183,10 +183,16 @@ html {
   height: auto;
   width: 100%;
   margin-bottom: 3rem;
+    display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 50px;
+
 }
 .hero .hero-img img {
   height: 100%;
   width: 100%;
+
 }
 /* End Hero Section */
 

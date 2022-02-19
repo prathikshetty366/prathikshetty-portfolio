@@ -2,6 +2,7 @@ import { projectDetails } from "../projectDetails";
 import React, { useEffect } from "react";
 import "./Project.css";
 
+
 function Projects() {
 	useEffect(() => {
 		console.log(projectDetails[0], "dffffffff");
