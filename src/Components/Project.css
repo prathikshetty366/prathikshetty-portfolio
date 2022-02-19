@@ -26,6 +26,8 @@
      cursor: pointer;
      color: black;
 
+   
+
 }
 .Title{
     width: 23%;
@@ -73,3 +75,18 @@ header{
   letter-spacing: 2px;
   color: black;
 }
+ 
+  @media (max-width: 480px) {
+            .Box {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: auto;
+            }
+            .Title{
+                width: 100%;
+            }
+            .Content{
+                width: 100%;
+            }
+        }
