@@ -4,14 +4,15 @@ import "./Project.css";
 
 
 function Projects() {
-	useEffect(() => {
-		console.log(projectDetails[0], "dffffffff");
-	});
-	return (
-		<div className="Container">
-			<h1 className="project-header"> Projects . .</h1>
-			{projectDetails.map((item) => {
-				return (
+  useEffect(() => {
+    console.log(projectDetails[0], "dffffffff");
+  });
+
+  return (
+    <div className="Container">
+      <h1 className="project-header"> Projects . .</h1>
+      {projectDetails.map((item) => {
+        return (
           <a href={item.link} style={{ textDecoration: "none" }}>
             <div className="Box">
               <div className="Title">
@@ -31,10 +32,10 @@ function Projects() {
             </div>
           </a>
         );
-			})}
-			;
-		</div>
-	);
+      })}
+      ;
+    </div>
+  );
 }
 
 export default Projects;

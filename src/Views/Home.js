@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import banner from "../Assets/banner.jpg";
 import profile from "../Assets/profile.jpeg";
 import Projects from "../Components/Projects";
 import Typewriter from "typewriter-effect";
 import Particle from "../Components/Particle";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { bounce } from "react-animations";
+import Radium, { StyleRoot } from "radium";
 
 function Home() {
+  useEffect(() => {
+    Aos.init({
+      // offset: 100,
+      duration: 1000,
+      easing: "ease-in-sine",
+      delay: 150,
+    });
+  }, []);
+  const styles = {
+    bounceInDown: {
+      animation: "x 10s",
+      animationName: Radium.keyframes(bounce, "bounce"),
+    },
+    bounceInRight: {
+      animation: "x 10s",
+      animationName: Radium.keyframes(bounce, "bounce"),
+    },
+  };
+
   return (
     <div>
       <section id="nav-bar" class="container">
@@ -59,35 +82,42 @@ function Home() {
         <div class="hero-img">
           <img src={banner} alt="" />
         </div>
+        <Particle />
       </section>
       {/* <!-- End Hero Section  --> */}
 
       {/* <!-- About section  --> */}
-      <section id="about" class="about container">
-        <div class="about-info">
-          <h1 class="about-info-heading">About Me</h1>
-          <p class="about-info-desc">
-            I am a Fullstack developer capable of Building both Web Apps and
-            Mobile Apps and skilled with the Technologies like React js, React
-            Native , Front End development using HTML,CSS,BOOTSTRAP. and Backend
-            Technologies like Node.js and core JavaScript.And expert in Mongodb
-            and JS Authentications
-          </p>
-          <a href="#" type="button" class="about-info-button">
-            B in B{" "}
-          </a>
-        </div>
-        <div class="about-img">
-          <div class="about-img-wrapper">
-            <img src={profile} alt="" />
+      <StyleRoot>
+        <section
+          id="about"
+          class="about container"
+          data-aos="zoom-in"
+          style={styles.bounceInRight}
+        >
+          <div class="about-info">
+            <h1 class="about-info-heading">About Me</h1>
+            <p class="about-info-desc">
+              I am a Fullstack developer capable of Building both Web Apps and
+              Mobile Apps and skilled with the Technologies like React js, React
+              Native , Front End development using HTML,CSS,BOOTSTRAP. and
+              Backend Technologies like Node.js and core JavaScript.And expert
+              in Mongodb and JS Authentications
+            </p>
+            <a href="#" type="button" class="about-info-button">
+              B in B{" "}
+            </a>
           </div>
-        </div>
-        <Particle />
-      </section>
+          <div class="about-img">
+            <div class="about-img-wrapper">
+              <img src={profile} alt="" />
+            </div>
+          </div>
+        </section>
+      </StyleRoot>
       {/* <!-- End About section  --> */}
 
       {/* <!-- Service Section  --> */}
-      <section id="services" class="services container">
+      <section id="services" class="services container" data-aos="zoom-in">
         <div class="services-header">
           <h1 class="services-header-heading">services</h1>
           <p class="services-header-desc">
