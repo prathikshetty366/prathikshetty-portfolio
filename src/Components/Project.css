@@ -60,7 +60,7 @@ header{
 
 }
 .image-container{
-    /* object-fit: contain; */
+    /* object-fit: contain;~ */
     width: 300px;
     height: 200px;
     /* padding: 20px; */
@@ -71,6 +71,9 @@ header{
 .image{
     border-radius: 20px;
     overflow: hidden;
+    padding: 5px;
+    width: 300px;
+
 }
 .project-header{
     font-size: 4rem;
@@ -82,8 +85,8 @@ header{
   @media (max-width: 480px) {
             .Box {
 flex-direction: column;
-justify-content: center;
-align-items: center;
+/* justify-content: center; */
+/* align-items: center; */
 width: auto;
             }
             .Title{
@@ -91,5 +94,8 @@ width: auto;
             }
             .Content{
                 width: 100%;
+            }
+            .image{
+                width: 250px;
             }
         }
