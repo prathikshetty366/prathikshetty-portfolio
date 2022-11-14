@@ -1,5 +1,11 @@
 export const projectDetails = [
 	{
+		name: "SimpleEnergy",
+		content:"India's first premium affordable EV Proudly made in India, by Indians, for the world",
+		image: require("./Assets/SimpleEnergy.jpg"),
+		link: "https://www.simpleenergy.in/",
+	},
+	{
 		name: "Shadow-Caster",
 		content:
 			"Shadow-Caster® has formed relationships with major marine electronic manufacturers to provide integrated solutions utilizing their lighting control technology.I have Developed control panel of this device using React.",
